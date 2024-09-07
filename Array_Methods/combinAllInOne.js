@@ -75,7 +75,7 @@ console.log("Check Item is Present or Not => ",includesItem);
 console.log("Oregnal Array => ", phones);
 
 let indexOfItem = phones.indexOf("Oppo");
-console.log("Show index no of you search in Array if present",indexOfItem);
+console.log("Show index no of you search in Array if present => ",indexOfItem);
 
 // Final State of array
 console.log(phones);
