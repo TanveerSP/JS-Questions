@@ -14,6 +14,16 @@ const cars = ["BMW","Mercedic","Ferari"]
 let mixArr = fruts.concat(numbers,cars);
 console.log("After mix two array using concat => ",mixArr);
 
+let allArr = [...fruts, ...cars, ...numbers];
+console.log("After use spred oprator", allArr);
 
+const vagitable = ["Tomato","Onian","Potato"];
+const frutes = ["Apple","Banana","Greps"];
+const fourWhils = ["Mahindra","Tata","Toyota"];
 
+const combainArr = [...vagitable,...frutes,...fourWhils];
+console.log(" => ",combainArr);
 
+combainArr.map((ele,ind) => (
+    console.log(ele, ind)
+))
