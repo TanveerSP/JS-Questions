@@ -12,13 +12,10 @@ const users = [
 const targetEmail = "empAtMicrosoft@gmail.com";
 const foundUser = users.find(user => user.email === targetEmail);
 
-console.log(foundUser);
+// console.log(foundUser);
 // Output { id:1, email:'empAtMicrosoft@gmail.com'}
 
 const findEmail = "empAtGoogle@gmail.com";
-const prisentEmail = users.find(user=> user.email === targetEmail);
-
-//================================================================================ //
-// Add a new property to an existing object and modify an existing property.
-//  What happens if the object is declared with const?
+const prisentEmail = users.find(user => user.email === targetEmail);
+console.log(prisentEmail);
 
