@@ -26,11 +26,6 @@ console.log(price);
 
 
 // Q3 What happens if a property does not exist in the object when you try to destructure it? Try destructuring duration from the course object.
-// const { duration} = course
-// console.log(duration);
-
-
-
 // Q4 How can you provide a default value while destructuring, in case the property does not exist? Provide a default value for duration.
 const { duration = "1 hourse" } = course;
 console.log(duration)
@@ -43,4 +38,8 @@ console.log(level);
 const {start: {time, day}} = course
 console.log(time);
 console.log(day);
+
+
+// final Object 
+console.log(course);
 
