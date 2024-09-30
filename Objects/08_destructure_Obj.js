@@ -4,15 +4,23 @@
 const course = {
     coursename: "TS in Hindi",
     price: "999",
-    courseInstructor: "Hitesh"
+    courseInstructor: "Hitesh",
+    details: {
+        level: "Beginner",
+        rating: 4.8
+    },
+    start:{
+        time: "9pm to 11pm",
+        day: "Sun, Thus, Sat",
+    }
 };
 
-const {coursename: name} = course;
+const { coursename: name } = course;
 console.log(name); // Output: "TS in Hindi"
 
 // Q2 If you want to destructure both coursename and price from the course object, how would you do that?
 
-const {coursename, price} = course;
+const { coursename, price } = course;
 console.log(coursename);
 console.log(price);
 
@@ -24,5 +32,15 @@ console.log(price);
 
 
 // Q4 How can you provide a default value while destructuring, in case the property does not exist? Provide a default value for duration.
-const { duration = "1 hourse"} = course;
+const { duration = "1 hourse" } = course;
 console.log(duration)
+
+
+// Q5 How can you destructure nested objects? Consider a new course object with a nested details object and destructure level.
+const {details: {level}} = course;
+console.log(level);
+
+const {start: {time, day}} = course
+console.log(time);
+console.log(day);
+
