@@ -10,8 +10,7 @@ const course = {
 const {coursename: name} = course;
 console.log(name); // Output: "TS in Hindi"
 
-// Q2 If you want to destructure both coursename and price from the 
-// course object, how would you do that?
+// Q2 If you want to destructure both coursename and price from the course object, how would you do that?
 
 const {coursename, price} = course;
 console.log(coursename);
