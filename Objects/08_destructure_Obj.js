@@ -18,5 +18,5 @@ console.log(price);
 
 
 // Q3 What happens if a property does not exist in the object when you try to destructure it? Try destructuring duration from the course object.
-const { duration = '2 hours'} = course
+const { duration} = course
 console.log(duration);
