@@ -8,7 +8,7 @@ function findMaxNumber(number) {
 
 // console.log(findMaxNumber(numArr)) // Output is: 45
 
-const newNumArr = [10,20,30,40];
+const newNumArr = [10,20,30,40,50];
 function findMaxNum(arrNum) {
     return Math.max(...arrNum);
 }
