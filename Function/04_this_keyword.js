@@ -60,3 +60,7 @@ const bike = (name, brand) => {
     };
 }
 console.log(bike("Passion", "Hero"))
+
+// Implicit Return with Arrow Function
+const getInfo = (name, age) => ({name: name, age:age});
+console.log(getInfo("Tanveer",21))
