@@ -24,11 +24,11 @@ function getMongthName(month) {
             return 'oct';
         case 11:
             return 'nov';
-        case 3:
+        case 12:
             return 'dec';
         default:
             return 'Invalid month number';
     }
 }
 
-console.log(getMongthName(4))
+console.log(getMongthName(11))
