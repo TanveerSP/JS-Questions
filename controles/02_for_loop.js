@@ -1,3 +1,4 @@
+// 1. Chick in array num even or odd using for loop
 function checkEvenOddNum(arr) {
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] % 2 === 0) {
