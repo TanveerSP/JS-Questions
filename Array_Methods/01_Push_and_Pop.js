@@ -21,13 +21,32 @@
 // console.log(num);
 // console.log(removedNum);
 
-let greenFrutes = [];
+// let greenFrutes = [];
 
-console.log("Befor Add Values in array => ", greenFrutes);
-greenFrutes.push("Green Apple", "Green Banana", "Green Orange");
+// console.log("Befor Add Values in array => ", greenFrutes);
+// greenFrutes.push("Green Apple", "Green Banana", "Green Orange");
 
-console.log("After add Values in Array => ", greenFrutes);
+// console.log("After add Values in Array => ", greenFrutes);
 
-// pop is an remove last element of array ;
-greenFrutes.pop();
-console.log(greenFrutes);
+// // pop is an remove last element of array ;
+// greenFrutes.pop();
+// console.log(greenFrutes);
+
+let listOfStudent = [];
+
+console.log("Befor add Student", listOfStudent);
+
+let removedStudent = listOfStudent.push(
+  "Ali",
+  "Umar",
+  "Ariba",
+  "Madiha",
+  "iqra",
+  "Humaira",
+  "zoher"
+);
+console.log("After add student in list of student", listOfStudent);
+console.log("removed student => ", removedStudent)
+
+listOfStudent.pop();
+console.log("After remove last student => ", listOfStudent);
