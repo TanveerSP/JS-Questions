@@ -24,7 +24,7 @@ const bigNumber = 56556555556556n // BigInt
 console.log( typeof bigNumber)
 
 const heros = ["Ironman", "Superman", "Thor"]
-console.log(heros)
+console.log(her)
 
 let myObj = {
     name: "tanveer",
