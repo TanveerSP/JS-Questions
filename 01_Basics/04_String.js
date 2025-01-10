@@ -40,3 +40,10 @@ console.log(newStr);
 const secStr = "   tanveer ";
 console.log(secStr); // print org string
 console.log(secStr.trim()); // remove extra spces 
+
+const url = "https://tanveer.com/tanveer%20pathan";
+console.log(url.replace('%20', '-'));
+
+console.log(url.includes('meta'))
+
+console.log(gameName.split('_'))
