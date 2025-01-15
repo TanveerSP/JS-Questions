@@ -25,4 +25,5 @@ const myNewArra = [200, 300, 400];
 function retrunSecondValue(getArray) {
   return getArray[1];
 }
-console.log(retrunSecondValue(myNewArra));
+// console.log(retrunSecondValue(myNewArra));
+console.log(retrunSecondValue([400, 500, 600]));
