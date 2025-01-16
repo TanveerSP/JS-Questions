@@ -31,6 +31,13 @@ let val1;
 // val1 = 5 ?? 10;
 // val1 = null ?? 10; // sefty check karta hai agar val me emp ho aur hum '??' ye oprator use ker ne ke bad jo value dal dete hai val1 me vo value jaige
 // val1 = undefined ?? 15;
-val1 = null ?? undefined ?? 10 ?? 20
+val1 = null ?? undefined ?? 10 ?? 20;
 
 console.log(val1);
+
+// Terniary Operator
+
+// condition ? true : false
+
+const iceTeaPri = 100;
+iceTeaPri <= 80 ? console.log("less than 80") : console.log("more than 80");
