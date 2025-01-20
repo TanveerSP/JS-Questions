@@ -77,3 +77,22 @@ h2.style.backgroundColor = "white"
 h2.style.padding = "20px"
 h2.style.color = "darkgreen"
 h2.style.margin = "20px"
+
+let div2 = document.createElement('div');
+
+let div2Content = document.createTextNode('click me')
+
+div2.appendChild(div2Content);
+
+// console.log(div2);
+
+div2.style.padding = '25px';
+div2.style.backgroundColor = 'red';
+div2.style.margin = '30px'
+
+div2.className = 'button'
+console.log(div2.outerHTML);
+
+// show on html, brwoser
+document.body.appendChild(div2)
+
