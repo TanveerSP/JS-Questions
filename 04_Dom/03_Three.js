@@ -99,7 +99,7 @@ document.body.appendChild(div2)
 
 const h3 = document.createElement('h3');
 
-const h3Text = document.createTextNode('Create h2 tag using js');
+const h3Text = document.createTextNode('Create h3 tag using js');
 
 h3.appendChild(h3Text);
 
