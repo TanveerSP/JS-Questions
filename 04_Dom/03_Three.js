@@ -96,3 +96,14 @@ console.log(div2.outerHTML);
 // show on html, brwoser
 document.body.appendChild(div2)
 
+
+const h3 = document.createElement('h3');
+
+const h3Text = document.createTextNode('Create h2 tag using js');
+
+h3.appendChild(h3Text);
+
+console.log();
+document.body.appendChild(h3)
+
+h3.style.color = "white"
