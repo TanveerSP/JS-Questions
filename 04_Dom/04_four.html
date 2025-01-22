@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>learn about DOM</title>
+  </head>
+  <body style="background-color: rgb(32, 32, 32); color: white">
+    <ul class="language">
+      <li>JavaScript</li>
+    </ul>
+  </body>
+  <script>
+    function addLanguage(langName) {
+      const li = document.createElement("li");
+      li.innerHTML = `${langName}`;
+
+      document.querySelector(".language").appendChild(li);
+      // appendChild(li)
+    }
+    addLanguage("Python");
+
+    function addOptiLanguage(langName) {
+      const li = document.createElement("li");
+      // this is short cut way and optimis
+      li.appendChild(document.createTextNode(langName));
+
+      // this way is also correct
+      // const addText = document.createTextNode(langName);
+      // li.appendChild(addText);
+      // show on brower
+      document.querySelector(".language").appendChild(li);
+    }
+
+    addOptiLanguage("Go");
+    addOptiLanguage("python");
+
+    // function addDescri(decrip) {
+    //   const p1 = document.createElement("p1");
+    //   p1.appendChild(document.createTextNode(decrip));
+
+    //   document.querySelector(".language").appendChild(p1);
+    // }
+
+    // addDescri(
+    //   "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae maiores fuga aut quisquam. Magni fugiat porro iusto odit, minus repudiandae similique voluptas debitis laborum necessitatibus fuga qui nam nemo quia?"
+    // );
+
+    // Edit
+
+    const secondLang = document.querySelector("li:nth-child(2)");
+    console.log(secondLang);
+    // secondLang.innerHTML = "Mojo"
+
+    const newli = document.createElement("li");
+    newli.textContent = "Mojo";
+    secondLang.replaceWith(newli);
+
+    // edit
+    const firstLang = document.querySelector("li:first-child");
+    firstLang.outerHTML = "<li>Typescript</li>";
+
+    // remove
+    const lastLang = document.querySelector("li:last-child");
+    lastLang.remove();
+  </script>
+</html>
