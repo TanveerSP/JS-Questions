@@ -98,5 +98,10 @@ function endGame() {
   newGame();
 }
      
+    
+
+
+
+
 
 
