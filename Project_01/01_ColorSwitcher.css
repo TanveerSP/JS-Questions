@@ -5,6 +5,10 @@ html {
   span {
     display: block;
   }
+  h3 {
+    display: block;
+    font-size: 20px;
+  }
   .canvas {
     margin: 100px auto 100px;
     width: 80%;
@@ -36,5 +40,11 @@ html {
   }
   #orange {
     background: orange;
+  }
+  #red {
+    background: red;
+  }
+  #pink {
+    background: pink;
   }
   
