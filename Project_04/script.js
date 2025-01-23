@@ -97,3 +97,6 @@ function resetGame() {
 function endGame() {
   newGame();
 }
+     
+
+
