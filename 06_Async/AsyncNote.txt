@@ -1,0 +1,18 @@
+1) JavaScript 
+        -- JavaScript is synchronous
+        -- Single threaded Language
+
+2) Execution context
+        -- execution one line of code at a time 
+        -- console.log()1
+        -- console.log()2
+
+
+3) Two type code in JavaScript
+        -- 1) Blocking code
+                --- Black the flow of program
+                --- Read fil sync
+
+        -- 2) Non Blocking code
+                -- does not block execution
+                -- Read file Async
