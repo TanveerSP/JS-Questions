@@ -54,6 +54,9 @@
             >Google</a
           >
         </li>
+        <li id="mylist">
+          Tanveer
+        </li>
       </ul>
     </div>
     <script>
@@ -95,25 +98,40 @@
       //     console.log("google clickd");
       //   });
 
-      document.querySelector("#images").addEventListener(
-        "click",
-        function (e) {
-          // console.log(e.target.parentNode);
-          // // agar is tarha likha jaye to fire galti se <ul> par click ho jane ke bad sub delete hojaing
-          // let removeIt = e.target.parentNode
-          // removeIt.remove()
+      // document.querySelector("#images").addEventListener(
+      //   "click",
+      //   function (e) {
+      //     // console.log(e.target.parentNode);
+      //     // // agar is tarha likha jaye to fire galti se <ul> par click ho jane ke bad sub delete hojaing
+      //     // let removeIt = e.target.parentNode
+      //     // removeIt.remove()
 
-          // ye wala use kare
-          console.log(e.target.tagName);
-          if (e.target.tagName === "IMG") {
-            console.log(e.target.id);
-            let removeIt = e.target.parentNode;
-            removeIt.remove();
-          }
-          // removeIt.parentNode.removeChild(removeIt)
-        },
-        false
-      );
+      //     // ye wala use kare
+      //     console.log(e.target.tagName);
+      //     if (e.target.tagName === "IMG") {
+      //       console.log(e.target.id);
+      //       let removeIt = e.target.parentNode;
+      //       removeIt.remove();
+      //     }
+      //     // removeIt.parentNode.removeChild(removeIt)
+      //   },
+      //   false
+      // );
+
+      document.querySelector('#images')
+      .addEventListener('click', (e) => {
+        e.preventDefault();
+        console.log(e);
+        if(e.target.tagName === "IMG"){
+          let removeIt = e.target.parentNode;
+          removeIt.remove()
+        }
+      },false)
+
+      document.getElementById('mylist')
+      .addEventListener('click', (e) => {
+        console.log("click Successful");
+      },false)
     </script>
   </body>
 </html>
