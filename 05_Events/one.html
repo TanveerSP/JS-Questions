@@ -59,6 +59,7 @@
         </li>
       </ul>
       <h1 id="h1-text">This is for practice</h1>
+      <h2 id="h2-text">This is h2 for practice</h2>
     </div>
     <script>
       // This aproch is not a good
@@ -138,6 +139,11 @@
       .addEventListener('click', (e) => {
         console.log("You Click on h1 tag ");
       }, false)
+
+      document.querySelector('#h2-text')
+      .addEventListener('click', (e) => {
+        console.log("You click h2 Text");
+      }, true);
     </script>
   </body>
 </html>
