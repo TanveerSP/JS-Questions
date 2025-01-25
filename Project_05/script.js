@@ -9,9 +9,9 @@ const randomColor = function () {
 };
 
 // DOM elements
-let bgColor = document.querySelector("body");
-let startButton = document.querySelector("#start");
-let stopButton = document.querySelector("#stop");
+// let bgColor = document.querySelector("body");
+// let startButton = document.querySelector("#start");
+// let stopButton = document.querySelector("#stop");
 
 // let intervalId = null;
 
