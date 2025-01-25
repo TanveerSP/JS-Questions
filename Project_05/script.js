@@ -12,8 +12,9 @@ let intervalId;
 
 // Start Button
 const startChangingcolor = function () {
-  intervalId = setInterval(changeBgcolor, 1000);
-
+  if (!intervalId) {
+    intervalId = setInterval(changeBgcolor, 1000);
+  }
   function changeBgcolor() {
     document.body.style.backgroundColor = randomColor();
   }
@@ -30,10 +31,9 @@ const stopChangingColor = function () {
 document.querySelector("#start").addEventListener("click", startChangingcolor);
 document.querySelector("#stop").addEventListener("click", stopChangingColor);
 
-
-// ============================================================ // 
+// ============================================================ //
 //                       Second Logic
-// ============================================================ // 
+// ============================================================ //
 
 // DOM elements
 // let bgColor = document.querySelector("body");
