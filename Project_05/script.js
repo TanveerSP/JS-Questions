@@ -1,4 +1,4 @@
-// generate a random color
+// Function to generate a random color
 const randomColor = function () {
   const hex = "0123456789ABCDEF";
   let color = "#";
@@ -8,12 +8,29 @@ const randomColor = function () {
   return color;
 };
 
-// console.log(randomColor());
-
+// DOM elements
 let bgColor = document.querySelector("body");
+let startButton = document.querySelector("#start");
+let stopButton = document.querySelector("#stop");
 
-let chageColor = function () {
-  bgColor.style.backgroundColor = randomColor();
-};
+// let intervalId = null;
 
-setInterval(chageColor, 2000);
+// // Function to change the background color
+// let changeColor = function () {
+//   bgColor.style.backgroundColor = randomColor();
+// };
+
+// // Event listener for the "Start" button
+// startButton.addEventListener("click", function () {
+//   if (!intervalId) { // Ensure only one interval runs at a time
+//     intervalId = setInterval(changeColor, 2000);
+//   }
+// });
+
+// // Event listener for the "Stop" button
+// stopButton.addEventListener("click", function () {
+//   if (intervalId) {
+//     clearInterval(intervalId);
+//     intervalId = null; // Reset the interval ID
+//   }
+// });
