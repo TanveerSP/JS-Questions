@@ -8,6 +8,33 @@ const randomColor = function () {
   return color;
 };
 
+let intervalId;
+
+// Start Button
+const startChangingcolor = function () {
+  intervalId = setInterval(changeBgcolor, 1000);
+
+  function changeBgcolor() {
+    document.body.style.backgroundColor = randomColor();
+  }
+  console.log("You click Start Button");
+};
+
+// Stop Button
+const stopChangingColor = function () {
+  clearInterval(intervalId);
+  intervalId = null;
+  console.log("You click Stop Button");
+};
+
+document.querySelector("#start").addEventListener("click", startChangingcolor);
+document.querySelector("#stop").addEventListener("click", stopChangingColor);
+
+
+// ============================================================ // 
+//                       Second Logic
+// ============================================================ // 
+
 // DOM elements
 // let bgColor = document.querySelector("body");
 // let startButton = document.querySelector("#start");
