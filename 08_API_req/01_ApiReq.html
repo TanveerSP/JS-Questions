@@ -4,12 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Request</title>
+    
   </head>
   <body style="background-color: rgb(46, 45, 45); color: white">
-    0 UNSENT Client has been created. open() not called yet. 1 OPENED open() has
-    been called. 2 HEADERS_RECEIVED send() has been called, and headers and
-    status are available. 3 LOADING Downloading; responseText holds partial
-    data. 4 DONE The operation is complete.
+    <div id="main"></div>
   </body>
   <script>
     const reqUrl = "https://api.github.com/users/hiteshchoudhary";
@@ -21,8 +19,23 @@
       if (xhr.readyState === 4) {
         // console.log(this.responseText);
         const data = JSON.parse(this.responseText);
-        console.log(typeof data);
-        console.log(data.followers); 
+
+        // console.log(typeof data);
+        // console.log(data.followers);
+        // console.log(data.login);
+        // console.log(data.avatar_url);
+
+        const profileImg = data.avatar_url;
+
+        const canves = document.querySelector("#main");
+        canves.innerHTML = `
+        <div id="card"> 
+            <img src="${profileImg}" />
+           <div id="card-info">
+            <h1>Repository Owner :- ${data.name}</h1>
+            <h2>Follower :- ${data.followers}</h2>
+           </div>
+        </div>`;
       }
     };
 
