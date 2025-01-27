@@ -30,7 +30,7 @@ function User(username, loginCount, isLoggedIn) {
     this.loginCount = loginCount;
     this.isLoggedIn = isLoggedIn;
 
-    // return this // if we dont defi return this 
+    return this // if we dont defi return this 
     // this is implicetly defind
 }
 
