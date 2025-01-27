@@ -92,7 +92,7 @@ async function getAllUsers() {
 }
 // getAllUsers();
 
-fetch("https://jsonplaceholder.typicode.com/users")
+fetch(" ")
   .then((res) => {
     return res.json();
   })
