@@ -30,6 +30,10 @@ function User(username, loginCount, isLoggedIn) {
     this.loginCount = loginCount;
     this.isLoggedIn = isLoggedIn;
 
+    this.greeting = function() {
+        console.log(`welcome ${this.username}`);
+    }
+
     return this // if we dont defi return this 
     // this is implicetly defind
 }
@@ -42,6 +46,11 @@ function User(username, loginCount, isLoggedIn) {
 // use new keyword
 const userOne = new User("tanveer",12,true);
 const userTwo = new User("CodeWithveer",11,false) 
-// console.log(userOne);
+console.log(userOne.constructor);
 // console.log(userTwo);
 
+// Notes about 'new' keyword :-
+// 1) jab hum new keyword ka use karte hai to ek empty Object create hota hai jisko instence kaha jata hai
+// 2) constructor function call hota hai jub muh new keyword declear karte hai
+// 3) this keyword inject ho jata hai
+// 4) hum ko function me mil jata hai
