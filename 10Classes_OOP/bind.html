@@ -8,6 +8,7 @@
   <body>
     <button>Button Clicked</button>
     <button id="colorbutton">Get Color</button>
+    <button id="myhero">My Hero</button>
   </body>
   <script>
     // class React {
@@ -19,7 +20,7 @@
     //         document
     //         .querySelector('button')
     //         .addEventListener('click', this.hadleClick.bind(this))
-            
+
     //     }
     //     hadleClick() {
     //         console.log("button clicked");
@@ -33,7 +34,7 @@
     //         this.myColor = "red"
     //         this.colorCode = "#FF0000"
 
-    //         // get button 
+    //         // get button
     //         document.querySelector('#colorbutton')
     //         .addEventListener('click', this.handleOnClick.bind(this))
     //     }
@@ -51,8 +52,29 @@
     // call a class
     // const app = new canves;
 
+    // ================================================= //
 
+    // create class
+    class Hero {
+      // add conststructor
+      constructor() {
+        // declear variable and add value
+        // add content
+        this.heroName = "Iron Man";
+        this.power = "Technology and iron armor";
 
-    
+        // get button id
+        document.querySelector('#myhero')
+        .addEventListener('click', this.clickHandler.bind(this))
+      }
+      // create nadler
+      clickHandler() {
+        console.log(`My Super Hero :- ${this.heroName}`);
+        console.log(`Power of hero :- ${this.power}`);
+      }
+    }
+
+    // call handler
+    const myHero = new Hero();
   </script>
 </html>
