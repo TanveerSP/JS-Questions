@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clouser</title>
   </head>
-  <body style="background-color: rgb(36, 36, 36);"></body>
+  <body style="background-color: rgb(36, 36, 36)">
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+  </body>
   <script>
     // function init() {
     //   let name = "Mozilla";
@@ -16,26 +19,60 @@
     //   displayName();
     // }
     // init();
-    let grandParent = 'grandParent'
+    let grandParent = "grandParent";
 
-    function fatherFun() {
-        let father = 'father';
-        // console.log("father accessing child", secret); // not defind becose father not get any value by child
-        function firstChild() {
-            let secret = 'my123'
-            console.log("firstChild access global variable :-",grandParent); // child access value of father and grandfather
-            console.log("firstChild access function :-" ,father);
-        }
-        function secondChild() {
-            console.log("secondChild access global variable :-",grandParent); // child access value of father and grandfather
-            console.log("scondChild access Two :-", father);
-            console.log(secret);
-        }
-        console.log("father access there father :-", grandParent);
-        firstChild()
-        secondChild()
+    // function fatherFun() {
+    //     let father = 'father';
+    //     // console.log("father accessing child", secret); // not defind becose father not get any value by child
+    //     function firstChild() {
+    //         let secret = 'my123'
+    //         console.log("firstChild access global variable :-",grandParent); // child access value of father and grandfather
+    //         console.log("firstChild access function :-" ,father);
+    //     }
+    //     function secondChild() {
+    //         console.log("secondChild access global variable :-",grandParent); // child access value of father and grandfather
+    //         console.log("scondChild access Two :-", father);
+    //         console.log(secret);
+    //     }
+    //     console.log("father access there father :-", grandParent);
+    //     firstChild()
+    //     secondChild()
+    // }
+    // fatherFun()
+    // console.log("Too OUTER",father);
+
+    //  ====================== closure ================ //
+    function makeFunc() {
+      const name = "Mozilla";
+      function displayName() {
+        console.log(name);
+      }
+      return displayName;
     }
-    fatherFun()
-    console.log("Too OUTER",father);
+
+    // displayName()//
+    const myFunc = makeFunc();
+    myFunc();
+  </script>
+  <script>
+    // document.getElementById("orange")
+    // .onclick = function () {
+    //     document.body.style.backgroundColor = 'orange'
+    // };
+    // document.querySelector("#green")
+    // .onclick = function() {
+    //     document.body.style.backgroundColor = 'green'
+    // }
+
+    function clickHandler(color) {
+      //   document.body.style.backgroundColor = `${color}`;
+      return function () {
+        document.body.style.backgroundColor = `${color}`;
+      };
+    }
+
+    document.getElementById("orange").onclick = clickHandler("orange");
+    document.getElementById("green").onclick = clickHandler("green");
+    // document.getElementById("green").onclick = clickHandler("red");
   </script>
 </html>
